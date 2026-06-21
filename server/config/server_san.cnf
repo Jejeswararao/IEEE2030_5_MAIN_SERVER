@@ -1,0 +1,20 @@
+[req]
+default_bits = 2048
+distinguished_name = req_distinguished_name
+req_extensions = req_ext
+prompt = no
+
+[req_distinguished_name]
+C = IN
+ST = Andhra Pradesh
+L = Bhimavaram
+O = EcoGrid
+OU = Ecogrid
+CN = 13.61.12.216
+
+[req_ext]
+subjectAltName = @alt_names
+
+[alt_names]
+IP.1 = 13.61.12.216
+IP.2 = 127.0.0.1
